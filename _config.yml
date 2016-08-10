@@ -9,8 +9,8 @@
 title: ProductHunt Daily Digest RSS
 email: freeatnet+phddrss@freeatnet.com
 description: A blog that publishes top 10 tech products published to ProductHunt, daily.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/producthunt-digest-rss" # the subpath of your site, e.g. /blog
+url: "http://freeatnet.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
