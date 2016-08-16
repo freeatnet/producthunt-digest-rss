@@ -16,7 +16,7 @@ output_file.write <<-eos
 ---
 layout: post
 title:  "Product Hunt Tech for #{content_date}"
-date:   #{DateTime.now.to_s}
+date:   #{(DateTime.now - (days_ago - 1)).to_s}
 ---
 
 eos
