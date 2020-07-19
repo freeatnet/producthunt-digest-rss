@@ -34,8 +34,9 @@ jobs:
       run: |
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
-    - name: Run tests
-      run: bundle exec ruby ph.rb
+    - name: Get latest hunts
+      # Retry it a few times.
+      run: for i in 1 2 3 4 5; do bundle exec ruby ph.rb && break || sleep 15; done
       env:
         PH_API_TOKEN: ${{ secrets.PH_API_TOKEN }}
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
